@@ -1,0 +1,87 @@
+body {
+    background-color: #ffd0a1;
+}
+
+#formulario {
+    background-color: #ffffff;
+    width: 30%;
+    height: 30%;
+    margin-top: 7%;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #b3b3b3;
+}
+
+#header {
+    background-color: #c16c30;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 20px 0; /* Adiciona um pouco de padding para melhor espaçamento */
+}
+
+#header img {
+    display: block;
+    margin: 0 auto;
+}
+
+#logoTxt {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 18px;
+    color: #181818;
+    margin-top: 10px; /* Adiciona espaçamento acima do texto */
+}
+
+
+h1 {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 25px;
+    color:#181818;
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+
+label {
+    margin-left: 5%;
+    display: flex;
+    font-size: 20px;
+}
+
+input, select {
+    display: flex;
+    text-align: left;
+    width: 60%;
+    height: 5%;
+    padding: 8px;
+    margin-left: 30%;
+    margin-right: 15%;
+    box-sizing: border-box;
+}
+
+#msg {
+    width: 75%; 
+    height: 100px; 
+    padding: 8px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 20px;
+    margin-bottom: 6%;
+    margin-top: 6%;
+    background-color: #c16c30;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9c490d;
+}
