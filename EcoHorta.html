@@ -29,16 +29,15 @@
                     </div>
                 </header>
                 <div class="slider">
-                    <p>Imagens</p>
                     <div class="slideImagens">
-                        <div class="PriImg">
+                        <div class="CarroImg">
                             <img src="imagemSlide.webp" alt="Imagem 1" class="ImagensHome">
                         </div>
-                        <div class="SegImg">
-                            <img src="image2.jpg" alt="Imagem 2" class="ImagensHome">
+                        <div class="CarroImg">
+                            <img src="feira.webp" alt="Imagem 2" class="ImagensHome">
                         </div>
-                        <div class="TerImg">
-                            <img src="image3.jpg" alt="Imagem 3" class="ImagensHome">
+                        <div class="CarroImg">
+                            <img src="Agricultura-Campo.jpg" alt="Imagem 3" class="ImagensHome">
                         </div>
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
@@ -78,7 +77,19 @@
                 <section class="Imagens"></section>
             </div>
             <div class="section Rodape">
-                <footer class="rodape"></footer>
+                <footer class="rodape">
+                    <div class="redeSociais">
+                        <button>
+                            <img src="" class="icones" alt="insta">
+                        </button>
+                        <button>
+                            <img src="" class="icones" alt="facebok">
+                        </button>
+                    </div>
+                    <div>
+
+                    </div>
+                </footer>
             </div>
         </div>
         <script>
@@ -99,6 +110,36 @@
                 sections[currentSectionIndex - 1].scrollIntoView({ behavior: 'smooth' });
             }
         });
+
+        let currentIndex = 0;
+        //Carrossel 
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.CarroImg');
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === currentIndex ? '1' : '0';
+            });
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        setInterval(nextSlide, 3000);
+        showSlide(currentIndex);
+
+
     </script>        
     </body>
 </html>

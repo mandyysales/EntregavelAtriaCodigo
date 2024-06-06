@@ -111,11 +111,52 @@ body, html {
 .slider {
     width: 85%;
     height: 90%;
+    position: relative;
     background-color: #D2B48C; 
     margin-left: 10%;
     margin-right: 5%;
+    overflow: hidden;
     align-self: center;
+    border-radius: 10px;
 }
+
+
+.slideImagens {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.CarroImg{
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.CarroImg img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 /* Seção de edições da parte de Conteúdo */
 .Conteudo {
