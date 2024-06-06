@@ -237,13 +237,15 @@ body, html {
 }
 .linha{
     display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 .card {
     position: relative;
     width: 220px;
     height: 320px;
-    background: mediumturquoise;
+    background: rgb(156, 127, 31);
     display: flex;
     align-items: center;
     justify-content: center;
