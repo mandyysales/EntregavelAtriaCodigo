@@ -6,3 +6,5 @@ Relatório de Contribuição:
 Página principal: Amanda
 
 Pagina Contato: Diego
+
+Para rodar o codigo: Baixe toda a pasta, EntregávelATRIACODIGO, e compile o arquivo EcoHorta.html;
