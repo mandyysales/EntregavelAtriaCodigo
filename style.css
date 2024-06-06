@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #ffd0a1;
 }
 
 #formulario {
@@ -14,18 +14,26 @@ body {
 }
 
 #header {
-    background-color: #008cff;
-    display: flex;
-    justify-content: center;
+    background-color: #c16c30;
+    text-align: center;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    padding: 20px 0; /* Adiciona um pouco de padding para melhor espaçamento */
 }
 
-img {
-    margin-top: 7%;
-    align-self: center;
-    margin-bottom: 7%;
+#header img {
+    display: block;
+    margin: 0 auto;
 }
+
+#logoTxt {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 18px;
+    color: #181818;
+    margin-top: 10px; /* Adiciona espaçamento acima do texto */
+}
+
 
 h1 {
     font-family: 'Roboto';
@@ -53,11 +61,20 @@ input, select {
     box-sizing: border-box;
 }
 
+#msg {
+    width: 75%; 
+    height: 100px; 
+    padding: 8px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    box-sizing: border-box;
+}
+
 button {
     font-size: 20px;
     margin-bottom: 6%;
     margin-top: 6%;
-    background-color: #008cff;
+    background-color: #c16c30;
     color: #fff;
     padding: 10px;
     border: none;
@@ -66,5 +83,5 @@ button {
 }
 
 button:hover {
-    background-color: #0076d6;
+    background-color: #9c490d;
 }
