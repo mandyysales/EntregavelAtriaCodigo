@@ -20,6 +20,7 @@ body, html {
     margin: 10px;
     margin-right: 40px;
     padding: 10px;
+    width: 105px;
     font-size: medium;
     font-weight: bold;
     cursor: pointer;
