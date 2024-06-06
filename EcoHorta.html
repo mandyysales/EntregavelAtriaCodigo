@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Site Institucional</title>
+        <link rel="stylesheet" href="desing.css">
+    </head>
+    <body>
+        <div class="Navegacao">
+            <button onclick="scrollToSection(0)">Cabeçalho</button>
+            <button onclick="scrollToSection(1)">Conteúdo</button>
+            <button onclick="scrollToSection(2)">História</button>
+            <button onclick="scrollToSection(3)">Rodapé</button>
+        </div>
+        <div class="ParteDaPagina">
+            <div class="section cabeçalho">
+                <header class="cabecalho2">
+                    <div class="Logo">
+                        <img src="png-transparent-logo-contracting-photography-logo-symbol.png"  alt="asas vermelha - logo" class="logoImg">
+                        <p style="font-size:large;">EcoHorta</p>
+                    </div>
+                    <div class="Menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#">Contato</a></li>
+                            </ul>
+                        </nav>                      
+                    </div>
+                </header>
+                <div class="slider">
+                    <p>Imagens</p>
+                </div>
+            </div>
+            <div class="section Conteudo">
+                <div class="Atividade">
+                    <p class="TituloConteudo">Atividade</p>
+                    <img src="hortaAtividade.webp" class="atividadeImg">
+                    <p class="DescricaoConteudo">   As atividades da *EcoHorta* são uma série de 
+                        projetos que buscam trazer qualidade de vida
+                        para a comunidade. 
+                    </p>
+                    <button class="VerMais"> Ver mais </button>
+                </div>
+                <div class="Produtos">
+                    <p class="TituloConteudo">Produtos</p>
+                    <img src="CestaLegumes.jpg" class="produtoImg">
+                    <p class="DescricaoConteudo">   Conheça os produtos da *EcoHorta*, 
+                        fazemos ums seleção cuidadosa e alta qualidade 
+                        para as ecoCestas. 
+                    </p>
+                    <button class="VerMais"> Ver mais </button>
+                </div>
+                <div class=" Noticias">
+                    <p class="TituloConteudo">Noticias</p>
+                    <img src="noticia.jpg" class="noticiaImg" alt="Produtos">
+                    <p class="DescricaoConteudo"> Saiba mais sobre o que acontece na *EcoHorta*,
+                        aqui apresentamos noticias, informações e eventos. 
+                    </p>
+                    <button class="VerMais"> Ver mais </button>
+                </div>
+            </div>
+            <div class="section Historia">
+                <section class="linhaTempo"></section>
+                <section class="Imagens"></section>
+            </div>
+            <div class="section Rodape">
+                <footer class="rodape"></footer>
+            </div>
+        </div>
+        <script>
+        function scrollToSection(index) {
+            const sections = document.querySelectorAll('.section');
+            sections[index].scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        document.addEventListener('wheel', function(event) {
+            const sections = document.querySelectorAll('.section');
+            let currentSectionIndex = Array.from(sections).findIndex(section => {
+                return section.getBoundingClientRect().top === 0;
+            });
+        
+            if (event.deltaY > 0 && currentSectionIndex < sections.length - 1) {
+                sections[currentSectionIndex + 1].scrollIntoView({ behavior: 'smooth' });
+            } else if (event.deltaY < 0 && currentSectionIndex > 0) {
+                sections[currentSectionIndex - 1].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>        
+    </body>
+</html>

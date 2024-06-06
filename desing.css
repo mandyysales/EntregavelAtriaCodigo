@@ -1,0 +1,204 @@
+/* Edição parte geral */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    overflow: hidden; /* Impede a rolagem padrão da página */
+    scroll-behavior: smooth;
+}
+
+.Navegacao {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.Navegacao button {
+    display: block;
+    margin: 10px;
+    margin-right: 40px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #8B4513;
+    border: none;
+    border-radius: 25px;
+}
+
+.ParteDaPagina {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Cada seção deve ocupar 100% da altura da tela */
+    width: 100%;
+}
+
+.section {
+    min-height: 100vh; /* Cada seção ocupa 100% da altura da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Edição da parte da página de entrada */
+.cabeçalho {
+    background-color: #8B4513;
+    color: #FFF;
+    color: #FFF;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.cabecalho2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100vw;
+    padding-bottom: 60px;
+    padding-top: 10px;
+    justify-items: center;
+
+}
+.Logo {
+    background-color: #A0522D; 
+    height: 60px;
+    border-radius: 50px;
+    width: 60px;
+    vertical-align:middle;
+    margin-right: 80%;
+
+}
+
+.logoImg {
+    border-radius: 50px;   
+    height: 60px;
+    width: 60px;
+}
+
+.Menu {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.Menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.Menu nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slider {
+    width: 85%;
+    height: 90%;
+    background-color: #D2B48C; 
+    margin-left: 10%;
+    margin-right: 5%;
+    align-self: center;
+}
+
+/* Seção de edições da parte de Conteúdo */
+.Conteudo {
+    padding: 20px;
+    background-color: #DEB887;
+    flex-wrap: wrap; 
+    color: #FFF;
+}
+
+.Atividade, .Produtos, .Noticias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.TituloConteudo {
+    color: #FFF;
+    font-size: larger;
+}
+
+.atividadeImg, .produtoImg, .noticiaImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.DescricaoConteudo {
+    font-weight: 500;
+    font-size: small;
+    margin: 10px;
+}
+
+.VerMais {
+    border-radius: 40px;
+    border: none;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #448e40;
+    color: #FFF;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.VerMais:hover {
+    opacity: 0.9;
+}
+
+.VerMais:active {
+    opacity: 0.8;
+}
+
+/* Edição da seção de história */
+.Historia {
+    padding: 20px;
+    background-color: #D2691E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Historia .linhaTempo,
+.Historia .Imagens {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #CD853F; 
+}
+
+.Rodape {
+    background-color: #8B4513; 
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape {
+    background-color: #A0522D; 
+    padding: 10px;
+}
